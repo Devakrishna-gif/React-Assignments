@@ -9,7 +9,10 @@ const Header = () => {
         <div className='container'>
             <img src={flipkartlogo} />
             <input className='searchBar' type='search' placeholder='Search for Products, Brands and More' />
-            <img src={profileicon} />
+            <div className="profileContianer">
+            <img className="profileIcon" src={profileicon} />
+            <p className="profileText">Cart</p>
+            </div>
 
         </div>
     )
