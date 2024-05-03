@@ -1,0 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '../App.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Body from './components/Body';
+
+const AppLayout = () => {
+    return (
+        <div className='app_layout'>
+            <Header />
+            <Banner />
+            <hr />
+            <Body />
+        </div>
+    )
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<AppLayout />)
